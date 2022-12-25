@@ -59,7 +59,9 @@ brew "nats-io/nats-tools/nats"
 brew "planetscale/tap/pscale"
 brew "supabase/tap/supabase"
 
-
+####################
+## Casks           #
+####################
 cask "browserosaurus"
 cask "chromium"
 cask "docker"
@@ -78,3 +80,10 @@ cask "osquery"
 cask "postman"
 cask "raycast"
 cask "powershell"
+
+
+####################
+## Mac App Store   #
+####################
+mas "Magnet", id: 441258766
+mas "Xcode", id: 497799835
