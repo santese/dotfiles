@@ -51,8 +51,6 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightC
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
-# Stop iTunes from responding to the keyboard media keys
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
 ###############################################################################
 # Finder                                                                      #
