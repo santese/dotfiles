@@ -6,7 +6,7 @@
 
 - [ ] Log into Mac App Store
 
-- [ ] Run bootstrap script
+- [ ] Clone & Run bootstrap script
 
   ```bash
     git clone "https://github.com/santese/dotfiles.git" ~/.dotfiles
