@@ -2,12 +2,13 @@
 
 # Uses [Zero](https://github.com/zero-sh/zero.sh)
 
-## One-liner Install
+## New Setup Install
 
 - [ ] Log into Mac App Store
 
 - [ ] Run bootstrap script
 
   ```bash
-    curl -fsL "https://raw.githubusercontent.com/santese/dotfiles/main/bootstrap.sh" | bash
+    git clone "https://github.com/santese/dotfiles.git" ~/.dotfiles
+    ~/.dotfiles/bootstrap.sh
   ```
