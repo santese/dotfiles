@@ -9,5 +9,5 @@
 - [ ] Run bootstrap script
 
   ```bash
-    curl -fsL pil.eus | bash
+    curl -fsL "https://raw.githubusercontent.com/santese/dotfiles/main/bootstrap.sh" | bash
   ```
