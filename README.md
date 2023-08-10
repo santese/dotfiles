@@ -1,8 +1,8 @@
-## dotfiles
+# dotfiles
 
-# Uses [Zero](https://github.com/zero-sh/zero.sh)
+### Uses [Zero](https://github.com/zero-sh/zero.sh)
 
-## New Setup Install
+### New Setup Install
 
 - [ ] Log into Mac App Store
 
