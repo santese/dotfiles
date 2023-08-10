@@ -1,6 +1,6 @@
-# dotfiles
+## dotfiles
 
-because everyone needs 'em
+# Uses [Zero](https://github.com/zero-sh/zero.sh)
 
 ## One-liner Install
 
