@@ -104,8 +104,21 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Screen                                                                      #
 ###############################################################################
 
-# Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop/Screenshots"
+ScreenshotLocation="~/Pictures/Screenshots"
+
+# Convert the tilde (~) to the actual home directory path
+ScreenshotLocation="${ScreenshotLocation/#\~/$HOME}"
+
+# Check if the folder exists, create it if not
+if [ ! -d "$ScreenshotLocation" ]; then
+    mkdir -p "$ScreenshotLocation"
+fi
+
+# Set the screenshot location
+defaults write com.apple.screencapture location "$ScreenshotLocation"
+
+# Restart SystemUIServer
+killall SystemUIServer
 
 ###############################################################################
 # Dock                                                                        #
@@ -148,3 +161,5 @@ for app in "Activity Monitor" \
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+
