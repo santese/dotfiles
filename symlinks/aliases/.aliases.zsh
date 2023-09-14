@@ -19,6 +19,9 @@ alias d=docker
 alias dc=docker-compose
 alias dkill="pgrep \"Docker\" | xargs kill -9"
 
+# Golang
+alias air='$(go env GOPATH)/bin/air'
+
 
 note() {
     echo "date: $(date)" >> $HOME/drafts.txt
