@@ -1,6 +1,8 @@
 # Taps
 tap "homebrew/bundle"
 tap "planetscale/tap"
+tap "oven-sh/bun"
+
 
 # Brews
 brew "awscli"
@@ -16,6 +18,8 @@ brew "mysql-client"
 brew "starship"
 brew "zoxide"
 brew "planetscale/tap/pscale"
+brew "oven-sh/bun/bun"
+
 
 # Casks
 cask "alacritty"
