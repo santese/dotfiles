@@ -35,5 +35,24 @@ export PATH="$PATH:/Users/santese/.local/bin"
 
 # AutoPkg
 export PYTHONPATH="/path/to/autopkglib:$PYTHONPATH"
-# bun completions
+
+# Bun completions
 [ -s "/Users/santese/.bun/_bun" ] && source "/Users/santese/.bun/_bun"
+
+# The Fuck
+eval $(thefuck --alias)
+
+# Handle Pckage Manager Aliases
+p() {
+  if [[ -f bun.lockb ]]; then
+    command bun "$@"
+  elif [[ -f pnpm-lock.yaml ]]; then
+    command pnpm "$@"
+  elif [[ -f yarn.lock ]]; then
+    command yarn "$@"
+  elif [[ -f package-lock.json ]]; then
+    command npm "$@"
+  else
+    command pnpm "$@"
+  fi
+}
