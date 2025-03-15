@@ -1,7 +1,7 @@
 #Zoxide
 eval "$(zoxide init zsh)"
 
-alias ls="exa"
+alias ls="lsd"
 alias ll="exa -l"
 alias tree="exa --tree"
 alias c='clear'
@@ -22,9 +22,8 @@ alias dkill="pgrep \"Docker\" | xargs kill -9"
 # Golang
 alias air='$(go env GOPATH)/bin/air'
 
-
 note() {
-    echo "date: $(date)" >> $HOME/drafts.txt
-    echo "$@" >> $HOME/drafts.txt
-    echo "" >> $HOME/drafts.txt
+    echo "date: $(date)" >>$HOME/drafts.txt
+    echo "$@" >>$HOME/drafts.txt
+    echo "" >>$HOME/drafts.txt
 }
